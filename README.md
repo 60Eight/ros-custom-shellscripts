@@ -1,7 +1,19 @@
-This an example of a custom shell script that sets a custom boot animation. You can test this out by adding the following to your rattlesnakeos-stack config file. See the [FAQ](https://github.com/dan-v/rattlesnakeos-stack#faq) for more details on customizations.
+Custom patches for use with [rattlesnakeos-stack](https://github.com/dan-v/rattlesnakeos-stack) to build [RattleSnakeOS](https://github.com/RattlesnakeOS).  
 
+## How to
+Add the following to end of your `rattlesnakeos-stack` config file.
 ```
+...
+
 [[custom-scripts]]
-  repo = "https://github.com/RattlesnakeOS/example_patch_shellscript"
-  scripts = ["00002-custom-boot-animation.sh"]
+  repo = "https://github.com/60Eight/ros-custom-shellscripts"
+  scripts = [
+      "00001-custom-boot-animation.sh"
+  ]
+
+...
+  
 ```
+
+## References:
+- https://github.com/dan-v/rattlesnakeos-stack#patches-and-scripts
