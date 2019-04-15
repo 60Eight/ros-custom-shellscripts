@@ -1,3 +1,4 @@
 00001-custom-boot-animation.sh
 00002-install-swipe-library.sh
 00003-modify-build-fingerprint.sh
+00004-replace-default-fonts.sh
