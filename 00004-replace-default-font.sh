@@ -8,4 +8,4 @@ unzip $BUILD_DIR/branding/custom_font.zip -d $BUILD_DIR/frameworks/base/data/fon
 sed -i '/font_src_files := /a  \\    Quicksand-Regular.ttf \\' ${BUILD_DIR}/frameworks/base/data/fonts/Android.mk
 sed -i '/PRODUCT_PACKAGES := /a  \\    Quicksand-Regular.ttf \\' ${BUILD_DIR}/frameworks/base/data/fonts/fonts.mk
 sed -i '/<familyset/a <family><font weight="400" style="normal">Quicksand-Regular.ttf<\/font><\/family>' ${BUILD_DIR}/frameworks/base/data/fonts/fonts.xml
-sed -i '/<familyset>/a <family><fileset><file>Quicksand-Regular.ttf<\/file><\/fileset><\/family>' ${BUILD_DIR}/frameworks/base/data/fonts/fallback_fonts.xml
+#sed -i '/<familyset>/a <family><fileset><file>Quicksand-Regular.ttf<\/file><\/fileset><\/family>' ${BUILD_DIR}/frameworks/base/data/fonts/fallback_fonts.xml
